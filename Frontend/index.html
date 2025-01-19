@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Library</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Movie Library</h1>
+            <p>Manage and explore your favorite movies</p>
+        </header>
+
+        <main>
+            <!-- Sección para buscar películas -->
+            <div class="search-container">
+                <input type="text" id="movie-name" placeholder="Enter movie name here..." />
+                <button id="search-btn">Search</button>
+            </div>
+
+            <!-- Formulario para agregar películas -->
+            <section id="add-movie">
+                <h2>Add a New Movie</h2>
+                <form id="movie-form">
+                    <input type="text" id="title" placeholder="Title" required>
+                    <input type="text" id="director" placeholder="Director" required>
+                    <input type="text" id="genre" placeholder="Genre" required>
+                    <input type="number" id="score" placeholder="Score (1-10)" min="1" max="10" required>
+                    <input type="text" id="rating" placeholder="Rating (e.g., PG-13)" required>
+                    <input type="number" id="year" placeholder="Year" min="1900" max="2025" required>
+                    <input type="text" id="poster" placeholder="Image URL (Poster)" required>
+                    <button type="submit">Add Movie</button>
+                </form>
+            </section>
+
+            <!-- Indicador de carga -->
+            <div id="loading-indicator" style="display: none; text-align: center; color: #fff; font-size: 1.2em;">
+                Loading...
+            </div>
+
+            <!-- Botón para mostrar películas -->
+            <button id="show-movies-btn">Show Movies</button>
+
+            <!-- Lista de películas -->
+            <section id="movie-list" style="display: none;">
+                <h2>Movies</h2>
+                <ul id="movies"></ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

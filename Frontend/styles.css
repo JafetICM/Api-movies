@@ -1,0 +1,140 @@
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#000000 50%, #ffb92a 50%);
+}
+
+.container {
+    font-size: 16px;
+    width: 90vw;
+    max-width: 37.5em;
+    padding: 3em 1.8em;
+    background-color: #201f28;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2em;
+    margin-bottom: 2em;
+}
+
+.search-container input,
+.search-container button {
+    font-size: 0.9em;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+.search-container input {
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    padding: 0.7em;
+    color: #ffffff;
+}
+
+.search-container button {
+    background-color: #ffb92a;
+    border: none;
+    cursor: pointer;
+}
+
+#add-movie {
+    margin-bottom: 2em;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 1em;
+    border-radius: 0.3em;
+    font-size: 1em;
+}
+
+form input {
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    color: #fff;
+}
+
+form button {
+    background-color: #ffb92a;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#show-movies-btn {
+    width: 100%;
+    padding: 1em;
+    background-color: #6a11cb;
+    color: #fff;
+    border: none;
+    border-radius: 0.3em;
+    font-size: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+#movie-list {
+    margin-top: 1.5em;
+}
+
+#movies {
+    list-style: none;
+    padding: 0;
+}
+
+#movies li {
+    padding: 1em;
+    margin-bottom: 0.8em;
+    background: #333;
+    border-radius: 0.3em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.movie-item {
+    display: flex;
+    gap: 1em;
+}
+
+.movie-poster {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 0.3em;
+}
+
+.movie-controls button {
+    margin-right: 0.5em;
+    padding: 0.5em;
+    font-size: 0.9em;
+    cursor: pointer;
+}
